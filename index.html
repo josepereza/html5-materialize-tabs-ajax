@@ -1,0 +1,476 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Title of the document</title>
+  <!-- Material Icon CDN -->
+  <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+  <!-- Materialize CSS CDN -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css">
+  <!-- google font -->
+
+  <link href="https://fonts.googleapis.com/css?family=Abril+Fatface" rel="stylesheet">
+
+  <!-- Your custom styles -->
+  <link rel="stylesheet" href="css/style.css">
+  <!-- Used as an example only to position the footer at the end of the page.
+    You can delete these styles or move it to your custom css file -->
+  <style>
+    * {
+      margin: 0;
+      box-sizing: border-box;
+    }
+
+    header {}
+
+    .cardo {
+      border-style: solid;
+      border-color: brown;
+
+
+    }
+
+    .formulario {
+      background-color: rgba(23, 43, 7, 0.8);
+      padding: 15px;
+
+
+
+
+
+    }
+
+    .fondophp {
+
+      background-color: rgba(33, 0, 77, 0.5);
+      max-width: 90%;
+      max-height: 200px;
+    }
+
+
+    #hello {
+      -webkit-animation: cssAnimation 1.9238s 1 ease;
+      -moz-animation: cssAnimation 1.9238s 1 ease;
+      -o-animation: cssAnimation 1.9238s 1 ease;
+    }
+
+    @-webkit-keyframes cssAnimation {
+      from {
+        -webkit-transform: rotate(0deg) scale(0.1) skew(1deg) translate(0px);
+      }
+
+      to {
+        -webkit-transform: rotate(0deg) scale(0.965) skew(1deg) translate(0px);
+      }
+    }
+
+    @-moz-keyframes cssAnimation {
+      from {
+        -moz-transform: rotate(0deg) scale(0.1) skew(1deg) translate(0px);
+      }
+
+      to {
+        -moz-transform: rotate(0deg) scale(0.965) skew(1deg) translate(0px);
+      }
+    }
+
+    @-o-keyframes cssAnimation {
+      from {
+        -o-transform: rotate(0deg) scale(0.1) skew(1deg) translate(0px);
+      }
+
+      to {
+        -o-transform: rotate(0deg) scale(0.965) skew(1deg) translate(0px);
+      }
+    }
+
+    /* label color */
+    textarea:focus+label {
+      color: red !important;
+      font-size: 1.5em !important;
+
+    }
+
+    textarea:focus {
+      border-bottom: 1px solid rgb(44, 223, 21) !important;
+
+    }
+
+    .input-field input:focus+label {
+      color: red;
+    }
+
+    .input-field label {
+      color: rgb(247, 241, 241) !important;
+    }
+
+    /* label focus color */
+    .input-field input:focus+label {
+      color: rgb(241, 10, 10) !important;
+      font-size: 1.5em !important;
+    }
+
+    /* label underline focus color */
+    .input-field input:focus {
+      border-bottom: 1px solid rgb(44, 223, 21) !important;
+      box-shadow: 0 1px 0 0 #000 !important;
+    }
+
+    /* valid color */
+    .input-field input[type=text].valid {
+      border-bottom: 1px solid #000 !important;
+      box-shadow: 0 1px 0 0 #000 !important;
+    }
+
+    /* invalid color */
+    .input-field input[type=text].invalid {
+      border-bottom: 1px solid #000 !important;
+      box-shadow: 0 1px 0 0 #000 !important;
+    }
+
+    /* icon prefix focus color */
+    .input-field .prefix.active {
+      color: rgb(236, 32, 32) !important;
+    }
+
+    .input-field .prefix {
+      color: rgb(238, 230, 230) !important;
+    }
+
+    .input-field {
+
+      color: rgb(250, 243, 243) !important;
+
+    }
+
+    .section1 {
+      background-image: url('imagenes/monitor.jpg');
+      background-repeat: no-repeat;
+      height: 100vh;
+      min-height: 900px;
+
+      background-position: center;
+      background-size: cover;
+      overflow: hidden;
+
+
+    }
+
+    .jumbotron {
+      background-color: rgba(27, 255, 67, 0.7);
+      padding: 10px;
+
+
+
+
+    }
+
+    .informacion {
+      height: 90%;
+    }
+
+    @media screen and (max-width: 480px) {
+      .fondophp h5 {
+
+        font-size: 4vw !important;
+
+      }
+    }
+
+    @media screen and (min-width: 1580px) {
+      .fondophp h5 {
+
+        font-size: 1vw !important;
+
+      }
+    }
+
+    .btn {
+      margin: 10px;
+    }
+  </style>
+</head>
+
+<body>
+
+
+
+
+  <header>
+
+    <nav class="cyan">
+      <div class="nav-wrapper">
+        <a href="#!" class="brand-logo">Logo</a>
+        <a href="#" data-target="mobile-demo" class="sidenav-trigger"><i class="material-icons">menu</i></a>
+        <ul class="right hide-on-med-and-down">
+          <li><a href="sass.html">Sass</a></li>
+          <li><a href="badges.html">Components</a></li>
+          <li><a href="collapsible.html">Javascript</a></li>
+          <li><a href="mobile.html">Mobile</a></li>
+        </ul>
+      </div>
+    </nav>
+
+    <ul class="sidenav" id="mobile-demo">
+      <li><a href="sass.html">Sass</a></li>
+      <li><a href="badges.html">Components</a></li>
+      <li><a href="collapsible.html">Javascript</a></li>
+      <li><a href="mobile.html">Mobile</a></li>
+    </ul>
+
+
+  </header>
+
+  <div class="section no-pad-bot  section1">
+
+
+    <div class="container center-align white-text valign-wrapper informacion"
+      style="font-family: 'Abril Fatface', cursive;">
+      <div class="row">
+        <div class="col s12 m12 l6">
+          <br><br> <br><br> <br>
+          <div class="jumbotron">
+            <h2 id="hello">HELLO WORLD PRO</h2>
+            <h3>Todo en creacion web</h3>
+            <a class="waves-effect waves-light btn-large">GET STARTED</a>
+
+          </div>
+        </div>
+        <div class="col s12 m12 l6 contact">
+          <br><br>
+          <div class="row formulario">
+            <h2 class="white-text center">Contact Us</h2>
+            <form action="correo.php" method="POST">
+
+
+              <div class="input-field col s6">
+                <i class="material-icons prefix">account_circle</i>
+                <input name="nombre" id="first_name" type="text">
+                <label for="first_name">Name</label>
+              </div>
+
+              <div class="input-field col s6">
+                <i class="material-icons prefix">local_phone</i>
+                <input name="telefono" id="telefono" type="tel" class="validate">
+                <label for="telefono">Telefono</label>
+              </div>
+
+
+              <div class="input-field col s12">
+                <i class="material-icons prefix">email</i>
+                <input name="email" id="email" type="email" class="validate">
+                <label for="email">email</label>
+              </div>
+
+
+
+              <div class="input-field col s12">
+                <i class="material-icons prefix">mode_edit</i>
+                <textarea name="texto" id="textarea1" class="materialize-textarea"></textarea>
+                <label for="textarea1">Textarea</label>
+              </div>
+
+
+
+
+              <div class="input-field col s12">
+
+                <input name="envia" class="btn" type="submit">
+
+              </div>
+
+            </form>
+
+
+          </div>
+
+        </div>
+      </div>
+
+    </div>
+  </div>
+
+
+  <main>
+    <!-- Your content here -->
+
+    <div class="parallax-container valign-wrapper center-align">
+      <div class="parallax"><img src="imagenes/robot-2167836_1920.jpg"></div>
+
+      <div class="container">
+        <div class="row ">
+          <div class="col s6 ">
+            <div id="php" class="card fondophp ">
+              <div class="card-content white-text ">
+                <h4>PHP</h4>
+                <h5 style="font-size:2vw;">
+                  Todo tipo de creaciones con php para profesionales
+
+                </h5>
+              </div>
+
+            </div>
+          </div>
+          <div class="col s6 ">
+            <div class="card fondophp ">
+              <div class="card-content white-text ">
+                <h4>PHP</h4>
+                <h5 style="font-size:2vw;">
+                  Todo tipo de creaciones con php para profesionales
+
+                </h5>
+              </div>
+
+            </div>
+          </div>
+          <div class="col s6 ">
+            <div class="card fondophp ">
+              <div class="card-content white-text ">
+                <h4>PHP</h4>
+                <h5 style="font-size:2vw;">
+                  Todo tipo de creaciones con php para profesionales
+
+                </h5>
+              </div>
+
+            </div>
+          </div>
+          <div class="col s6 ">
+            <div class="card fondophp ">
+              <div class="card-content white-text ">
+                <h4>PHP</h4>
+                <h5 style="font-size:2vw;">
+                  Todo tipo de creaciones con php para profesionales
+
+                </h5>
+              </div>
+
+            </div>
+          </div>
+        </div>
+
+      </div>
+    </div>
+
+    <div class="container">
+      <div class="section">
+
+        <!--   Icon Section   -->
+        <div class="row">
+          <div class="col s12 m4">
+            <div class="icon-block">
+              <h2 class="center light-blue-text"><i class="large material-icons">flash_on</i></h2>
+              <h5 class="center">Speeds up development</h5>
+
+              <p class="light">We did most of the heavy lifting for you to provide a default stylings that incorporate
+                our custom components. Additionally, we refined animations and transitions to provide a smoother
+                experience for developers.</p>
+            </div>
+          </div>
+
+          <div class="col s12 m4">
+            <div class="icon-block">
+              <h2 class="center light-blue-text"><i class="large material-icons">group</i></h2>
+              <h5 class="center">User Experience Focused</h5>
+
+              <p class="light">By utilizing elements and principles of Material Design, we were able to create a
+                framework that incorporates components and animations that provide more feedback to users. Additionally,
+                a single underlying responsive system across all platforms allow for a more unified user experience.</p>
+            </div>
+          </div>
+
+          <div class="col s12 m4">
+            <div class="icon-block">
+              <h2 class="center light-blue-text"><i class="large material-icons">settings</i></h2>
+              <h5 class="center">Easy to work with</h5>
+
+              <p class="light">We have provided detailed documentation as well as specific code examples to help new
+                users get started. We are also always open to feedback and can answer any questions a user may have
+                about Materialize.</p>
+            </div>
+          </div>
+        </div>
+
+      </div>
+      <br><br>
+    </div>
+
+    <div class="parallax-container">
+      <div class="parallax"><img src="imagenes/binary-1607190_1920.jpg"></div>
+    </div>
+
+    <div class="container">
+
+      <div class="row">
+        <div class="col s12">
+          <ul id="tabs-swipe-demo" class="tabs">
+            <li id="materialize" class="tab col s3"><a href="#">materialize</a></li>
+
+            <li id="phps" class="tab col s3"><a href="#">php</a></li>
+          </ul>
+          <div class="center-align templates">
+          </div>
+
+        </div>
+
+
+      </div>
+
+
+    </div>
+
+  </main>
+  <footer class="page-footer cyan">
+    <div class="container">
+      <div class="row">
+        <div class="col s12 m8 l6">
+          <h5 class="white-text">First Footer Content</h5>
+          <p class="grey-text text-lighten-4">You can use rows and columns here to organize your footer content.</p>
+        </div>
+        <div class="col s12 m4 l6">
+          <h5 class="white-text">Second Footer Content</h5>
+          <p class="grey-text text-lighten-4">You can use rows and columns here to organize your footer content.</p>
+        </div>
+      </div>
+    </div>
+    <div class="footer-copyright">
+      <div class="container">
+        © 2017 Copyright Text
+        <a class="grey-text text-lighten-4 right" href="#!">More Links</a>
+      </div>
+    </div>
+  </footer>
+  <!-- jQuery CDN -->
+  <script src="https://code.jquery.com/jquery-3.2.1.min.js"
+    integrity="sha256-hwg4gsxgFZhOsEEamdOYGBf13FyQuiTwlAQgxVSNgt4=" crossorigin="anonymous"></script>
+  <!-- Materialize JS CDN -->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
+  <script>
+    $("document").ready(function () {
+      $.post("materialize.html", function (data) {
+        $(".templates").html(data);
+      });
+      $('.sidenav').sidenav();
+      $('.parallax').parallax();
+      $('.tabs').tabs();
+      $('input#input_text, textarea#textarea2').characterCounter();
+      $('#materialize').click(function () {
+        $.post("materialize.html", function (data) {
+          $(".templates").html(data);
+        });
+      });
+      $('#phps').click(function () {
+        $.post("php.html", function (data) {
+
+          $(".templates").html(data);
+        });
+      });
+
+    });
+  </script>
+</body>
+
+</html>
